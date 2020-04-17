@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+}
+.home {
+    height: 100%;
+    background-color: #373737;
+    color: #FFFFFF;
+}
+
+.header {
+    padding: 30px 20px;
+    font-size: 18px;
+    font-family: Helvetica, Tahoma, Arial;
+}
+.content {
+    font-size: 16px;
+    padding: 30px 0;
+}
+.brief {
+    padding: 10px 0;
+    margin-left: 50%;
+    transform: translateX(-15%);
+}
+.author {
+    float: right;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+.me {
+    margin-left: 45%;
+    padding-right: 20px;
+    color: #408FCA;
+    font-size: 30px;
+}
+.github-page {
+    margin-left: 42%;
+
+}
+.basic-link {
+    color: #659993;
+    text-decoration: none;
+}
+
+.footer {
+
+}
