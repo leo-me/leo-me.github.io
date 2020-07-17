@@ -4,10 +4,12 @@ html, body {
 .home {
     height: 100%;
     /* background-color: #373737; */
-    background-color: #000000;
+    /* background-color: #000000; */
     color: #FFFFFF;
     /* background: url('./static/img/como-ahorrar-agua-energia-bano-06.jpg') no-repeat 100%; */
     /* background-size: cover; */
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -17,14 +19,46 @@ html, body {
     font-family: Helvetica, Tahoma, Arial;
     padding-top: 100px;
 }
-.content {
-    font-size: 16px;
-    padding: 30px 0;
+.left {
+    /* float: left; */
+    width: 300px;
+    height: 100%;
+    background-color: #26323E;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.github-page {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color:#6CBEC5 ;
+    font-size: 12px;
+}
+.name {
+    margin-left: 50%;
+    padding-bottom: 10px;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 50%;
+    transform: translateX(-30%);
+}
+.label {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.label li {
+    padding-top: 5px;
 }
 .brief {
-    padding: 10px 0;
-    margin-left: 50%;
+    padding: 10px 30px;
+    /* margin-left: 30px; */
     transform: translateX(-15%);
+}
+.words {
+    padding: 30px 10px;
 }
 .author {
     float: right;
@@ -37,14 +71,16 @@ html, body {
     color: #408FCA;
     font-size: 30px;
 }
-.github-page {
-    margin-left: 42%;
 
-}
 .basic-link {
     /* color: #659993; */
     color: #ffffff;
     text-decoration: none;
+}
+
+.content {
+    font-size: 16px;
+    padding: 30px 0;
 }
 
 .footer {
