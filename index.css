@@ -31,11 +31,12 @@ html, body {
 .github-page {
     margin-left: 50%;
     transform: translateX(-50%);
-    color:#6CBEC5 ;
-    font-size: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 .name {
-    margin-left: 50%;
+    margin-left: 47%;
     padding-bottom: 10px;
 }
 .avatar {
@@ -43,11 +44,19 @@ html, body {
     height: 50px;
     border-radius: 25px;
     margin-left: 50%;
-    transform: translateX(-30%);
+    transform: translateX(-50%);
 }
+.basic-link {
+    padding-left: 10px;
+    /* color: #ffffff; */
+    color:#6CBEC5;
+    text-decoration: none;
+}
+
 .label {
     margin-left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    transform: translateX(-30%);
 }
 .label li {
     padding-top: 5px;
@@ -55,7 +64,7 @@ html, body {
 .brief {
     padding: 10px 30px;
     /* margin-left: 30px; */
-    transform: translateX(-15%);
+    transform: translateX(-10%);
 }
 .words {
     padding: 30px 10px;
@@ -70,12 +79,6 @@ html, body {
     padding-right: 20px;
     color: #408FCA;
     font-size: 30px;
-}
-
-.basic-link {
-    /* color: #659993; */
-    color: #ffffff;
-    text-decoration: none;
 }
 
 .content {
