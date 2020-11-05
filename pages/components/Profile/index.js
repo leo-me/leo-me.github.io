@@ -3,6 +3,7 @@ import Cat from '../cat';
 import styles from './index.less';
 
 export default () => {
+
 	return (
 		<div className={styles.blog}>
 			<div className={styles.brief}>
@@ -15,7 +16,10 @@ export default () => {
 					<li>architecture</li>
 				</ul>
 			</div>
-			<div className={styles.githubPage}>
+			<div
+				className={styles.githubPage}
+				onClick={() => document.location = 'https://github.com/leo-me/javaScript-basic'}
+			>
 				<svg
 					t="1594976439667"
 					className={styles.icon}
@@ -32,7 +36,7 @@ export default () => {
 						fill="#ffffff"
 					></path>
 				</svg>
-				<a href="https://github.com/leo-me/javaScript-basic" className={styles.basicLink}>
+				<a className={styles.basicLink}>
 					leo.me
 				</a>
 			</div>
