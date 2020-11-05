@@ -12,6 +12,14 @@ export default () => {
         <ol>2.包含数据的方式：作用域链</ol>
         <ol>3.函数：一般的函数，作用域链运行完就销毁，闭包对变量还有引用，作用域链不会销毁</ol>
       </h2>
+      <div>
+        markdown
+        ```
+        #jest单元测试，如
+        yarn test packages/fnUtils/__tests__/data.test.js
+        ```
+        ## 开发约定
+      </div>
     </div>
   );
 }
