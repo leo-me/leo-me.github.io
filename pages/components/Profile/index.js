@@ -10,10 +10,10 @@ export default () => {
 				<div className={styles.name}>leo</div>
 				<ul className={styles.label}>
 					<li>front-end engineer</li>
-					<li>idealism</li>
-					<li>design</li>
-					<li>art</li>
-					<li>architecture</li>
+					<li>full stack development trainee</li>
+					<li>like to delve into technology</li>
+					<li>love design.architecture.painting.book</li>
+					<li>like cats</li>
 				</ul>
 			</div>
 			<div
@@ -37,9 +37,13 @@ export default () => {
 					></path>
 				</svg>
 				<a className={styles.basicLink}>
-					leo.me
+					Home Page
 				</a>
 			</div>
+			<div className={styles.contact}>
+				Email:
+				<span className={styles.address}>leo.me0602@gmail.com</span>
+				</div>
 			<div className={styles.words}>
 				The "self" thing is invisible. When you bump into something else and bounce back, you will understand
 				"self". So, collide with very strong things, terrible things, and high-level things, and then only know
