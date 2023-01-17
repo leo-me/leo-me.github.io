@@ -18397,6 +18397,12 @@
             r = p()(window).scrollTop();
           z(t, n - r, 5);
         }),
+          p()(document).touchmove(function (e) {
+            var t = e.pageX,
+              n = e.pageY,
+              r = p()(window).scrollTop();
+            z(t, n - r, 5);
+          }),
           d.ticker.add(f),
           d.registerPlugin(h);
       }

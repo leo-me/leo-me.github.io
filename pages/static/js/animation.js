@@ -116,6 +116,13 @@ export default function animation() {
       createMagicDust(x, y - scrollPosition, 5);
     });
 
+    $(document).touchmove(function (e) {
+      var x = e.pageX;
+      var y = e.pageY;
+      var scrollPosition = $(window).scrollTop();
+      createMagicDust(x, y - scrollPosition, 5);
+    });
+
     // start rendering animation
     gsap.ticker.add(renderCv);
     gsap.registerPlugin(Physics2DPlugin);
