@@ -1,5 +1,11 @@
 import $ from 'jquery';
-import gsap, { Power0 } from 'gsap';
+// import gsap, { Power0 } from 'gsap';
+
+const gsap = window.gsap;
+
+gsap.config({ trialWarn: false });
+
+const Physics2DPlugin = window.Physics2DPlugin;
 
 export default function animation() {
   var end_panel = document.querySelector('#panel');
@@ -14,7 +20,6 @@ export default function animation() {
 
   // resize for retina
   resizeCv();
-
   function start_fx() {
     // particles
     init_fx(
@@ -49,6 +54,13 @@ export default function animation() {
       0, // delay timeline
     );
   }
+
+  // $(document).mousemove(function (e) {
+  //   var x = e.pageX;
+  //   var y = e.pageY;
+  //   var scrollPosition = $(window).scrollTop()
+  //   createMagicDust(x, y - scrollPosition, 5)
+  // });
 
   function init_fx(
     textureSpr,
@@ -89,10 +101,24 @@ export default function animation() {
       var texture = createShape(textureSpr, i);
       sprites.push(createSprite());
     }
+
+    var createMagicDust = (x, y, n) => {
+      for (var i = 0; i < n; i++) {
+        var texture = createShape(textureSpr, Math.floor(Math.random() * 10));
+        sprites.push(createSprite(x, y, 2));
+      }
+    };
+
+    $(document).mousemove(function (e) {
+      var x = e.pageX;
+      var y = e.pageY;
+      var scrollPosition = $(window).scrollTop();
+      createMagicDust(x, y - scrollPosition, 5);
+    });
+
     // start rendering animation
     gsap.ticker.add(renderCv);
-    // gsap.registerPlugin(Physics2DPlugin);
-    // console.log('Physics2DPlugin: ', Physics2DPlugin);
+    gsap.registerPlugin(Physics2DPlugin);
     function createSprite(x, y, t) {
       var width = (texture.naturalWidth || texture.width || 0) / resolution;
       var height = (texture.naturalHeight || texture.height || 0) / resolution;
@@ -250,20 +276,4 @@ export default function animation() {
     return Math.floor(min + (max - min + 1) * Math.random());
   }
   start_fx();
-
-  $(document).mousemove(function (e) {
-    var x = e.pageX;
-    var y = e.pageY;
-    var scrollPosition = $(window).scrollTop();
-    createMagicDust(x, y - scrollPosition, 5);
-  });
-
-  function createMagicDust(x, y, n) {
-    try {
-      for (var i = 0; i < n; i++) {
-        var texture = createShape(textureSpr, Math.floor(Math.random() * 10));
-        sprites.push(createSprite(x, y, 2));
-      }
-    } catch (error) {}
-  }
 }
