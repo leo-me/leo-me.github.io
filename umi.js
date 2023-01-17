@@ -18309,13 +18309,14 @@
         return (ee = Me(e, Z)) && Gn;
       },
       ne = function (e, t) {
-        return console.warn(
-          'Invalid property',
-          e,
-          'set to',
-          t,
-          'Missing plugin? gsap.registerPlugin()',
-        );
+        return '';
+        // console.warn(
+        //   'Invalid property',
+        //   e,
+        //   'set to',
+        //   t,
+        //   'Missing plugin? gsap.registerPlugin()',
+        // );
       },
       re = function (e, t) {
         return !t && console.warn(e);
