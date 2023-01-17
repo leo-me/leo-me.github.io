@@ -1,18 +1,24 @@
-import React from 'react';
-import Profile from './components/Profile'
-import Content from './components/content';
+import React, { useEffect } from 'react';
+import Profile from './components/Profile';
 import Cat from './components/cat';
+import animation from './static/js/animation';
 import styles from './index.less';
 
 export default () => {
+  useEffect(() => {
+    animation();
+  }, []);
+
   return (
-    <div className={styles.home}>
-      <div className={styles.top}>
-        <Profile />
+    <div>
+      <div id="panel">
+        <canvas id="magic-dust"></canvas>
       </div>
-      <div className={styles.bottom}>
+
+      <div className={styles.top}>
         <Cat />
+        <Profile />
       </div>
     </div>
   );
-}
+};
