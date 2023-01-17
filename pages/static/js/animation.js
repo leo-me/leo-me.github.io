@@ -116,7 +116,7 @@ export default function animation() {
       createMagicDust(x, y - scrollPosition, 5);
     });
 
-    $(document).touchmove(function (e) {
+    $(document).on('touchmove', '#panel', function () {
       var x = e.pageX;
       var y = e.pageY;
       var scrollPosition = $(window).scrollTop();
