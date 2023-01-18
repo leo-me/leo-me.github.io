@@ -38,10 +38,11 @@ export default () => {
           </div>
         </div>
         <ul className={styles.label}>
+          <li>full stack developer</li>
           <li>front-end engineer</li>
-          <li>full stack development</li>
-          <li>like to delve into technology</li>
-          <li>love design.architecture.painting.book</li>
+          <li>technology</li>
+          <li>design</li>
+          <li>architecture</li>
           <li>cats</li>
         </ul>
       </div>

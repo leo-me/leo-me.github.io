@@ -18201,16 +18201,13 @@
                 Object(u['jsxs'])('ul', {
                   className: s.a.label,
                   children: [
+                    Object(u['jsx'])('li', {
+                      children: 'full stack developer',
+                    }),
                     Object(u['jsx'])('li', { children: 'front-end engineer' }),
-                    Object(u['jsx'])('li', {
-                      children: 'full stack development',
-                    }),
-                    Object(u['jsx'])('li', {
-                      children: 'like to delve into technology',
-                    }),
-                    Object(u['jsx'])('li', {
-                      children: 'love design.architecture.painting.book',
-                    }),
+                    Object(u['jsx'])('li', { children: 'technology' }),
+                    Object(u['jsx'])('li', { children: 'design' }),
+                    Object(u['jsx'])('li', { children: 'architecture' }),
                     Object(u['jsx'])('li', { children: 'cats' }),
                   ],
                 }),
